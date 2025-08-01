@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333; 
+}
+
+/* Header */
+header {
+    background-color: #FFD700; 
+    color: #333; 
+    padding: 1.5rem 0; 
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.8rem; 
+    color: #5C4033; 
+
+header p {
+    font-size: 1.2rem;
+    color: #666; 
+}
+
+/* Navigation  */
+nav {
+    background-color: #5C4033; 
+    color: white;
+    padding: 0.75rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 18px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+    padding: 8px 0; 
+    transition: color 0.3s ease, transform 0.2s ease; /
+}
+
+nav ul li a:hover {
+    color: #FFD700; 
+    transform: translateY(-2px); 
+}
+
+/* Main Content Section  */
+main {
+    padding: 25px; 
+    max-width: 960px; 
+    margin: 30px auto; 
+    background-color: #fff; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+section {
+    margin-bottom: 40px; 
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee; 
+
+section:last-of-type {
+    border-bottom: none; 
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #FF8C00; 
+    font-size: 2.2rem; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700; 
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #444; 
+    font-size: 1.6rem; 
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Image Styling  Figures */
+figure {
+    margin: 25px 0; 
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+    border-radius: 8px; /
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+figcaption {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #777;
+    margin-top: 8px;
+}
+
+/* List Styling */
+ul {
+    list-style: disc; 
+    margin-left: 25px; 
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px; 
+}
+
+ul[aria-label="Popular Cat Breeds"] li strong,
+ul[aria-label="Ways to Adopt a Cat"] li strong {
+    color: #FF8C00; 
+
+/* Article Styling */
+article {
+    background-color: #fdfdfd; 
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+
+article:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /
+}
+
+article h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 2rem 0; 
+    margin-top: 40px; 
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #FFD700; 
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+address {
+    font-style: normal; 
+    margin-top: 15px;
+    color: #ccc; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
